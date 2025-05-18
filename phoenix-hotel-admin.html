@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
   <script>
-    fetch('url-redirect.txt')
+    fetch('redirect-url.txt')
       .then(res => res.text())
       .then(url => {
-        window.location.href = url.trim() + '/adminpanel';
+        window.location.href = url.trim() + 'adminpanel';
       })
       .catch(err => {
         document.body.innerText = 'Failed to load redirect URL.';
