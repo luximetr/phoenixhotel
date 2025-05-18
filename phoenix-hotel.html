@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
   <script>
-    fetch('url-redirect.txt')
+    fetch('redirect-url.txt')
       .then(res => res.text())
       .then(url => {
         window.location.href = url.trim();
