@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://intelligence-species-challenged-carrier.trycloudflare.com">
-  </head>
-  <body>
-    <p>Redirecting...</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    fetch('url-redirect.txt')
+      .then(res => res.text())
+      .then(url => {
+        window.location.href = url.trim();
+      })
+      .catch(err => {
+        document.body.innerText = 'Failed to load redirect URL.';
+      });
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
 </html>
